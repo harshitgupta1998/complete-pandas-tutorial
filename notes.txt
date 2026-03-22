@@ -1,0 +1,4 @@
+Optimizing
+
+1. Throttling of API endpoint and timeout can cause an issue
+2. Caching of the data can reduce the load on the database.
