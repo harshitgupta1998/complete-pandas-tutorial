@@ -1,6 +1,11 @@
 Optimizing
 
-1. Throttling of API endpoint and timeout can cause an issue
+1. Throttling of API endpoint and timeout can cause an issue, hence need to understand how frequent we need to ingest the data.
 2. Caching of the data can reduce the load on the database.
 3. V's of big data can be considered as well.
 4. Consistency.
+5. Storage and ingestiion might bottleneck
+6. Push/Pull Stream/Batch Hot/Cold data
+7. Data security, integrity, govenance
+8. Data Architecture -> to understand the tradeoffs
+9. Orch -> Airflow
