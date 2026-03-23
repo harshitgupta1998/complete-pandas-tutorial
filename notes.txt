@@ -11,3 +11,4 @@ Optimizing
 9. Orch -> Airflow
 10. python -m venv venb # create venv   
 source ./venb/bin/activate    
+ streamlit run app.py 
