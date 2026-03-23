@@ -9,3 +9,4 @@ Optimizing
 7. Data security, integrity, govenance
 8. Data Architecture -> to understand the tradeoffs
 9. Orch -> Airflow
+10. python -m venv venb # create venv   
