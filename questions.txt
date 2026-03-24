@@ -1,0 +1,27 @@
+What does success look like in the first 90 days for this Data Engineer role?
+
+What kinds of data problems would I be working on most often—ingestion, transformation, data quality, platform design, or analytics support?
+
+How is the data engineering team structured, and how closely do Data Engineers work with analysts, data scientists, and product or mission teams?
+
+What are the biggest technical challenges the team is facing right now in data pipelines or platform scalability handling trillion of data points?
+
+How do you think about data quality, governance, and metadata management in practice here?
+
+For someone in this role, how much ownership do they typically have over architecture decisions versus implementation?
+
+How do mission context and customer needs shape technical decisions on the data side?
+
+After the hackathon, what are the main things the team evaluates most heavily—code quality, problem framing, communication, tradeoffs, speed, or product thinking?
+
+If I joined, what would be the highest-impact project or outcome you’d want me to contribute to over the next 6 to 12 months?
+
+When you look at a strong solution for this role, what matters more here: speed, scalability, maintainability, or clarity of decision-making—and how do you balance those tradeoffs internally?
+
+How do Data Engineers at Rhombus connect their technical work to mission impact, especially in cases where the “right” engineering decision is not the most obvious one?
+
+What are the hardest real-world data challenges your team deals with today—data quality, messy source integration, latency, scale, or ambiguity in user needs?
+
+In this environment, what separates someone who is technically strong from someone you trust with high-impact ownership?
+
+If I joined and did very well over the next 6 to 12 months, what outcomes or problems would you hope I had meaningfully improved?
