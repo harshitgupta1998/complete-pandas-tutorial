@@ -78,3 +78,39 @@ with requests.get(url, stream=True) as r:
         if line:
             obj = json.loads(line.decode("utf-8"))
             print(obj)
+
+######
+import streamlit as st
+import requests
+import pandas as pd
+from datetime import datetime
+import time
+
+st.title("Live API Feed Demo")
+
+if "rows" not in st.session_state:
+    st.session_state.rows = []
+
+placeholder = st.empty()
+
+url = "https://api.coingecko.com/api/v3/simple/price"
+params = {"ids": "bitcoin", "vs_currencies": "usd"}
+
+for _ in range(20):  # simulate 20 updates
+    r = requests.get(url, params=params, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    st.session_state.rows.append({
+        "timestamp": datetime.utcnow(),
+        "type": "btc_price",
+        "value": data["bitcoin"]["usd"]
+    })
+
+    df = pd.DataFrame(st.session_state.rows)
+
+    with placeholder.container():
+        st.dataframe(df.tail())
+        st.line_chart(df.set_index("timestamp")["value"])
+
+    time.sleep(2)
