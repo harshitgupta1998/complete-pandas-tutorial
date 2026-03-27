@@ -292,7 +292,14 @@ pivot = df.pivot_table(
 
 print(pivot)
 
+# timezone
 df["timestamp_local"] = df["timestamp_utc"].dt.tz_convert("America/Los_Angeles")
+# Drop duplicates
+df = df.drop_duplicates(subset=["id"], keep="last")
+# NA
+import pandas as pd
+
+df = df.replace(["", " ", "   ", "N/A", "n/a", "null", "None", "unknown"], pd.NA)
 
 ###
 A very strong dashboard layout
