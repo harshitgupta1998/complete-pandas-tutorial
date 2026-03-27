@@ -292,7 +292,7 @@ pivot = df.pivot_table(
 
 print(pivot)
 
-
+df["timestamp_local"] = df["timestamp_utc"].dt.tz_convert("America/Los_Angeles")
 
 ###
 A very strong dashboard layout
